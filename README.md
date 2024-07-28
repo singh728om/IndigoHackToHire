@@ -43,8 +43,13 @@ We utilize the `bert-base-uncased` model from the Hugging Face Transformers libr
     git clone https://github.com/singh728om/IndigoHackToHire.git
     cd IndigoHackToHire
     ```
+    or
+   ```sh
+    git clone https://github.com/your-username/question-answering-system.git
+    cd question-answering-system
+    ```
 
-2. Install the required packages:
+3. Install the required packages:
     ```sh
     pip install -r requirements.txt
     ```
