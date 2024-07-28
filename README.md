@@ -40,8 +40,8 @@ We utilize the `bert-base-uncased` model from the Hugging Face Transformers libr
 ### Steps
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/question-answering-system.git
-    cd question-answering-system
+    git clone https://github.com/singh728om/IndigoHackToHire.git
+    cd IndigoHackToHire
     ```
 
 2. Install the required packages:
