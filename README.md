@@ -23,6 +23,8 @@ The goal of this project is to build a question-answering system using the BERT 
 
 ## Dataset
 We use the Quora Question Answer Dataset available on Hugging Face Datasets.
+Data set: https://huggingface.co/datasets/toughdata/quora-question-answer-
+dataset
 
 ## Model
 We utilize the `bert-base-uncased` model from the Hugging Face Transformers library. The model is fine-tuned on the dataset to improve its question-answering capabilities.
