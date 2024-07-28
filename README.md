@@ -81,8 +81,3 @@ To train the model, run the Jupyter notebook provided in the repository. The not
 }
 
 
-Contact:
-    ```sh
-    Email: pixom.ai@gmail.com
-    Mob: +918448107082
-    ```
