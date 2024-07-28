@@ -3,8 +3,8 @@ Hack to Hire Hackathon @Indigo
 
 >> unizp indigo.zip file to start
 ```sh
->> Open (IndigoHackToHire.pptx) file for detailed presentation.
-presented by : pixom.ai@gmail.com
+>> Open (IndigoHackToHire.pptx)for detailed presentation.
+presented by: pixom.ai@gmail.com
 ```
 
 # Question Answering System Using BERT
