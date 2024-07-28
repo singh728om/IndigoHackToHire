@@ -2,7 +2,9 @@
 Hack to Hire Hackathon @Indigo
 
 >> unizp indigo.zip file to start
+```sh
 >> Open (IndigoHackToHire.pptx) file for detailed presentation.
+```
 
 # Question Answering System Using BERT
 
