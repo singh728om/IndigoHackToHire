@@ -1,7 +1,7 @@
 # IndigoHackToHire
 Hack to Hire Hackathon @Indigo
 
->> unizp indigo.zip file to start (uploaded zip file due to large file error from github side) either you can unzip Indigo.zip(all files in one place).
+>> unizp indigo.zip file to start (uploaded zip file due to large file error from github side) either you can unzip Indigo.zip(all files in one place) OR work induvidually with notebook and app.py.
 >> 
 ```sh
 >> Open (IndigoHackToHire.pptx)for detailed presentation.
