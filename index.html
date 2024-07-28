@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Answering System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        textarea, input[type="text"] {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .answer-container {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f5e9;
+            border-left: 5px solid #4CAF50;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .answer-container p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Question Answering System</h1>
+        <form id="qa-form">
+            <label for="context">Context:</label>
+            <textarea id="context" name="context" rows="4" cols="50" required></textarea>
+            <label for="question">Question:</label>
+            <input type="text" id="question" name="question" required>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="answer-container" id="answer-container">
+            <h2>Answer:</h2>
+            <p id="answer"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('qa-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const context = document.getElementById('context').value;
+            const question = document.getElementById('question').value;
+
+            const response = await fetch('http://localhost:5000/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ context, question })
+            });
+
+            const data = await response.json();
+            document.getElementById('answer').innerText = data.answer;
+            document.getElementById('answer-container').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
