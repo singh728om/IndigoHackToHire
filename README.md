@@ -1,6 +1,8 @@
 # IndigoHackToHire
 Hack to Hire Hackathon @Indigo
 
+>> unizp indigo.zip file to start
+
 # Question Answering System Using BERT
 
 This project demonstrates the development of a state-of-the-art question-answering model leveraging the Quora Question Answer Dataset. The objective is to create an AI system capable of understanding and generating accurate responses to a variety of user queries, mimicking human-like interaction.
