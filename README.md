@@ -79,3 +79,10 @@ To train the model, run the Jupyter notebook provided in the repository. The not
     "context": "Quora is a question-and-answer website where questions are asked, answered, and edited by Internet users.",
     "question": "What is Quora?"
 }
+
+
+Contact:
+    ```sh
+    Email: pixom.ai@gmail.com
+    Mob: +918448107082
+    ```
